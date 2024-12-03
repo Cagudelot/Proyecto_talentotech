@@ -77,6 +77,42 @@
     <!-- dejo el script al final para cuando se ejecute el Dom no tenga inconvenientes -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
 </body>
+<body>
+    <section>
+        <main class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" onclick="openModal('./imagenes/central_hidroelectrica_es.jpg', 'Veamos el funcionamiento de una central hidroeléctrica.')">
+                        <img src="/imagenes/hidroelectrica.png" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Energía hidroeléctrica</h5>
+                            <p class="card-text">Es aquella que se genera al transformar la fuerza del agua en energía eléctrica. Para aprovechar dicha fuerza, se construyen grandes infraestructuras hidráulicas capaces de extraer el máximo potencial de este recurso renovable, libre de emisiones y autóctono.</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="openModal('./images/image2.jpg', 'Energía solar', 'This is another description.')">
+                        <img src="./images/image2.jpg" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Energía solar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <!-- Popup Modal -->
+        <div id="popupModal" class="popup-modal" onclick="closeModal(event)">
+            <div class="popup-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="popupImage" src="" alt="Popup Image">
+                <p id="popupDescription"></p>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+</body>
 </html>
 
 
